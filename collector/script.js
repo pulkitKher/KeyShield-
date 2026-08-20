@@ -32,6 +32,12 @@ passwordInput.addEventListener("keyup", function(event) {
 
     keystrokes.push(record);
 
-    console.log(keystrokes);
+    eventLog.innerHTML += `
+        <p>
+            Key: ${key}
+            |
+            Hold Time: ${holdTime.toFixed(2)} ms
+        </p>
+    `;
 
 });
